@@ -1,0 +1,15 @@
+spring:
+  security:
+    user:
+      password: guest123
+      name: guest
+    oauth2:
+      client:
+        registration:
+          my-client:
+            client-id: trustedclient
+            client-secret: trustedclient123
+            authorization-grant-type: authorization_code,refresh_token,password
+logging:
+  level:
+    org.springframework.security: debug
